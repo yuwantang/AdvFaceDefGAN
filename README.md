@@ -5,19 +5,30 @@ This repository provides the official code for the paper:
 
 "AdvFaceDefGAN: A Study on Defense Methods for Face Recognition Against Dual-Identity Attacks", submitted to The Visual Computer (Springer, 2025). The released code supports verification of experimental results.
 
-1.Conda 环境：
+1.Conda Environment Setup：
+
 conda deactivate
+
 conda remove -n AdvFaceDefGAN --all -y
+
 conda create -n AdvFaceDefGAN -y
+
 conda activate AdvFaceDefGAN
+
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
+
 conda install torchmetrics tqdm tensorboard multiprocess  -y
+
 conda install -c conda-forge jupyter -y
+
 conda install matplotlib -y
+
 conda install ipykernel -y
+
 python -m ipykernel install --user --name=AdvFaceDefGAN --display-name "AdvFaceDefGAN"
 
 pip install alibabacloud_facebody20191230
+
 pip install -i https://mirrors.tencent.com/pypi/simple/ --upgrade tencentcloud-sdk-python
 
 2. Dataset
